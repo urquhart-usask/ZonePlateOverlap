@@ -62,12 +62,12 @@ ZP_diameter = ZP_diameter * um
 ZP_central_stop_diameter = st.number_input("Zone plate central stop diameter (micron)", value=100, min_value=0.0)
 ZP_central_stop_diameter = ZP_central_stop_diameter * um
 
-delta_r = st.number_input("Zone plate outer zone width (nm)", value=25, min_value=5.0)
+delta_r = st.number_input("Zone plate outer zone width (nm)", value=25.0, min_value=5.0)
 delta_r = delta_r * nm
 
-energy_eV = st.number_input("Photon Energy (eV)", value=710, min_value=100.0)
+energy_eV = st.number_input("Photon Energy (eV)", value=710.0, min_value=100.0)
 
-defocus_z_increment = st.number_input("Zone plate Z displacement for defocus (micron)", value=10, min_value=100.0)
+defocus_z_increment = st.number_input("Zone plate Z displacement for defocus (micron)", value=10.0, min_value=100.0)
 Defocus_increment = defocus_z_increment * um
 # -------------------------------------------------
 # Zone plate parameters
