@@ -145,5 +145,7 @@ if st.button("Calculate Overlap"):
                                                            defocused_outer) - 2 * circle_overlap_percent_largest(
         Point_spacing, defocused_outer, defocused_inner)
 
+    st.subheader(f"Defocused diameter: {defocused_outer/um:.2f} (micron")
+
     st.subheader(f"Disk Overlap: {disk_overlap_percent:.2f}%")
     st.subheader(f"Donut Overlap: {donut_overlap_percent:.2f}%")
