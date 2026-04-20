@@ -126,16 +126,24 @@ b_inner = - CS_radius
 defocused_outer = m_outer * defocused_focal_length + b_outer
 defocused_inner = m_inner * defocused_focal_length + b_inner
 
-print(f"Defocused outer diameter = {defocused_outer/um:.3f} um")
-print(f"Inner donut diameter = {defocused_inner/um:.3f} um")
+#print(f"Defocused outer diameter = {defocused_outer/um:.3f} um")
+#print(f"Inner donut diameter = {defocused_inner/um:.3f} um")
 
-disk_overlap_percent = circle_overlap_percent_largest(Point_spacing, defocused_outer, defocused_outer)
+#disk_overlap_percent = circle_overlap_percent_largest(Point_spacing, defocused_outer, defocused_outer)
 
-print(f"Overlap Percentage as disk = {disk_overlap_percent:.2f}")
+#print(f"Overlap Percentage as disk = {disk_overlap_percent:.2f}")
 
-donut_overlap_percent = circle_overlap_percent_largest(Point_spacing, defocused_outer, defocused_outer) - 2* circle_overlap_percent_largest(Point_spacing, defocused_outer, defocused_inner)
-
-
-print(f"Overlap Percentage as donut = {donut_overlap_percent:.2f}")
+#donut_overlap_percent = circle_overlap_percent_largest(Point_spacing, defocused_outer, defocused_outer) - 2* circle_overlap_percent_largest(Point_spacing, defocused_outer, defocused_inner)
 
 
+#print(f"Overlap Percentage as donut = {donut_overlap_percent:.2f}")
+
+
+if st.button("Calculate Overlap"):
+    disk_overlap_percent = circle_overlap_percent_largest(Point_spacing, defocused_outer, defocused_outer)
+    donut_overlap_percent = circle_overlap_percent_largest(Point_spacing, defocused_outer,
+                                                           defocused_outer) - 2 * circle_overlap_percent_largest(
+        Point_spacing, defocused_outer, defocused_inner)
+
+    st.subheader(f"Disk Overlap: {disk_overlap_percent:.2f}%")
+    st.subheader(f"Donut Overlap: {donut_overlap_percent:.2f}%")
