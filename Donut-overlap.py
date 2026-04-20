@@ -67,7 +67,7 @@ delta_r = delta_r * nm
 
 energy_eV = st.number_input("Photon Energy (eV)", value=710.0, min_value=100.0)
 
-defocus_z_increment = st.number_input("Zone plate Z displacement for defocus (micron)", value=10.0, min_value=100.0)
+defocus_z_increment = st.number_input("Zone plate Z displacement for defocus (micron)", value=10.0, min_value=0.0)
 Defocus_increment = defocus_z_increment * um
 # -------------------------------------------------
 # Zone plate parameters
