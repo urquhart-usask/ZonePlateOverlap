@@ -56,7 +56,7 @@ st.write("Compute the percent overlap between adjacent focus spots.")
 spacing = st.number_input("Step size in micron", value=0.5)
 spacing = spacing * um
 
-ZP_diameter = st.number_input("Zone plate diameter (micron)", value=250, min_value=0.0)
+ZP_diameter = st.number_input("Zone plate diameter (micron)", value=250.0, min_value=0.0)
 ZP_diameter = ZP_diameter * um
 
 ZP_central_stop_diameter = st.number_input("Zone plate central stop diameter (micron)", value=100, min_value=0.0)
