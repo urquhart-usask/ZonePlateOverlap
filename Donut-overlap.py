@@ -59,7 +59,7 @@ spacing = spacing * um
 ZP_diameter = st.number_input("Zone plate diameter (micron)", value=250.0, min_value=0.0)
 ZP_diameter = ZP_diameter * um
 
-ZP_central_stop_diameter = st.number_input("Zone plate central stop diameter (micron)", value=100, min_value=0.0)
+ZP_central_stop_diameter = st.number_input("Zone plate central stop diameter (micron)", value=100.0, min_value=0.0)
 ZP_central_stop_diameter = ZP_central_stop_diameter * um
 
 delta_r = st.number_input("Zone plate outer zone width (nm)", value=25.0, min_value=5.0)
