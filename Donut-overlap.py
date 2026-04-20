@@ -1,3 +1,13 @@
+# Streamlit app to calculate the overlap between adjacent defocused spots
+# in a STXM microscope
+#
+# Treats the spot as a disk or as a donut
+# Disk and donut size taken from simple geometric arguments (focal length and ZP diameters
+#
+# Stephen Urquhart, April 19, 2026
+# With a lot of CoPilot help
+#
+
 import streamlit as st
 import math
 
@@ -53,8 +63,8 @@ def circle_overlap_percent_largest(d, r1, r2):
 st.title("Ptychography Overlap Calculator")
 st.write("Compute the percent overlap between adjacent focus spots.")
 
-spacing = st.number_input("Step size in micron", value=0.5)
-spacing = spacing * um
+Point_spacing = st.number_input("Step size in micron", value=0.5)
+Point_spacing = Point_spacing * um
 
 ZP_diameter = st.number_input("Zone plate diameter (micron)", value=250.0, min_value=0.0)
 ZP_diameter = ZP_diameter * um
