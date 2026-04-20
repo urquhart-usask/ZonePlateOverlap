@@ -1,7 +1,5 @@
 import streamlit as st
 import math
-import matplotlib.pyplot as plt
-import numpy as np
 
 um = 1e-6
 nm = 1e-9
