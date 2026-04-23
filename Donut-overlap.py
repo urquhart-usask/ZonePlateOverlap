@@ -79,6 +79,10 @@ energy_eV = st.number_input("Photon Energy (eV)", value=710.0, min_value=100.0)
 
 defocus_z_increment = st.number_input("Zone plate Z displacement for defocus (micron)", value=10.0, min_value=0.0)
 Defocus_increment = defocus_z_increment * um
+
+
+defocus_spot_size = st.number_input("Defocus Spot Size", value=2.5, min_value=0.0)
+defocus_spot_size = defocus_spot_size * um
 # -------------------------------------------------
 # Zone plate parameters
 # -------------------------------------------------
@@ -139,7 +143,7 @@ defocused_inner = m_inner * defocused_focal_length + b_inner
 #print(f"Overlap Percentage as donut = {donut_overlap_percent:.2f}")
 
 
-if st.button("Calculate Overlap"):
+if st.button("Calculate Overlap Based on Z-displacement"):
     disk_overlap_percent = circle_overlap_percent_largest(Point_spacing, defocused_outer, defocused_outer)
     donut_overlap_percent = circle_overlap_percent_largest(Point_spacing, defocused_outer,
                                                            defocused_outer) - 2 * circle_overlap_percent_largest(
@@ -149,3 +153,10 @@ if st.button("Calculate Overlap"):
 
     st.subheader(f"Disk Overlap: {disk_overlap_percent:.2f}%")
     st.subheader(f"Donut Overlap: {donut_overlap_percent:.2f}%")
+
+
+if st.button("Calculate Overlap Based on Defocused Diameter"):
+    disk_overlap_percent = circle_overlap_percent_largest(Point_spacing, defocused_spot_size, defocused_spot_size)
+
+    st.subheader(f"Defocused diameter: {defocused_spot_size/um:.2f} (micron")
+    st.subheader(f"Disk Overlap: {disk_overlap_percent:.2f}%")
