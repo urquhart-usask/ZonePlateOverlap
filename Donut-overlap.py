@@ -156,7 +156,7 @@ if st.button("Calculate Overlap Based on Z-displacement"):
 
 
 if st.button("Calculate Overlap Based on Defocused Diameter"):
-    disk_overlap_percent = circle_overlap_percent_largest(Point_spacing, defocused_spot_size, defocused_spot_size)
+    disk_overlap_percent = circle_overlap_percent_largest(Point_spacing, defocus_spot_size, defocus_spot_size)
 
-    st.subheader(f"Defocused diameter: {defocused_spot_size/um:.2f} (micron")
+    st.subheader(f"Defocused diameter: {defocus_spot_size/um:.2f} (micron")
     st.subheader(f"Disk Overlap: {disk_overlap_percent:.2f}%")
