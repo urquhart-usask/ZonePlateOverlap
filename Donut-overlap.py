@@ -34,10 +34,13 @@
 
 
 import streamlit as st
+import sys
 import math
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 import numpy as np
+
+st.write("Python:", sys.executable)
 
 um = 1e-6
 nm = 1e-9

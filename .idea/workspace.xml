@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="42da2426-f224-429d-bbda-cef94d4faa81" name="Changes" comment="commit after Claude AI updates" />
+    <list default="true" id="42da2426-f224-429d-bbda-cef94d4faa81" name="Changes" comment="commit after Claude AI updates">
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Donut-overlap.py" beforeDir="false" afterPath="$PROJECT_DIR$/Donut-overlap.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,7 +97,7 @@
       <workItem from="1776976837485" duration="1089000" />
       <workItem from="1777576432604" duration="157000" />
       <workItem from="1777576670499" duration="48000" />
-      <workItem from="1777667189607" duration="3042000" />
+      <workItem from="1777667189607" duration="3719000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <option name="closed" value="true" />
@@ -215,7 +219,23 @@
       <option name="project" value="LOCAL" />
       <updated>1777669579903</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="commit after Claude AI updates">
+      <option name="closed" value="true" />
+      <created>1777670350383</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1777670350383</updated>
+    </task>
+    <task id="LOCAL-00017" summary="commit after Claude AI updates">
+      <option name="closed" value="true" />
+      <created>1777670436687</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1777670436687</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,6 +245,17 @@
     <MESSAGE value="commit" />
     <MESSAGE value="commit after Claude AI updates" />
     <option name="LAST_COMMIT_MESSAGE" value="commit after Claude AI updates" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Donut-overlap.py</url>
+          <line>35</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ZonePlateOverlap$ZP_spot.coverage" NAME="ZP-spot Coverage Results" MODIFIED="1776653593274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
