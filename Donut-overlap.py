@@ -31,16 +31,12 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-
-
 import streamlit as st
 import sys
 import math
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 import numpy as np
-
-st.write("Python:", sys.executable)
 
 um = 1e-6
 nm = 1e-9
@@ -145,6 +141,7 @@ def plot_overlap(r, d, r_inner=0):
 
 st.title("Ptychography Overlap Calculator")
 st.write("Compute the percent overlap between adjacent focus spots.")
+st.write("Stephen Urquhart, May 2026, MIT License")
 
 with st.sidebar:
     st.header("Scan Parameters")
